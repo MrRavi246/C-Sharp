@@ -26,7 +26,7 @@ namespace C_Sharp.OOPs
             Console.WriteLine("Colour of book : " + colour);
         }
     }
-    class book1
+    class DemoClass1
     {
         public static void Main(string[] args)
         {
