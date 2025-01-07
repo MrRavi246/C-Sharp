@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace C_Sharp.OOPs
 {
-    public class book
+
+    public class book1
     {
         double price;
         int pages;
         string colour;
 
-        public void getData(double price,int pages,string colour)
+        public void getData()
         {
-            this.price = price;
-            this.pages = pages;
-            this.colour = colour;
+            Console.WriteLine("Enter book price : ");
+            price = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Pages : ");
+            pages = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter colour of book");
+            colour = Console.ReadLine();   
         }
 
         public void showData()
@@ -26,16 +32,15 @@ namespace C_Sharp.OOPs
             Console.WriteLine("Colour of book : " + colour);
         }
     }
-    class DemoClass1
+    class DemoClass2
     {
         public static void Main(string[] args)
         {
-            book b1 = new book();
-            b1.getData(70,200,"Red");
+            book1 b1 = new book1();
+            b1.getData();
             b1.showData();
 
             Console.ReadKey();
         }
     }
 }
-
