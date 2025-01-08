@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp.P1
 {
-    internal class PA1Q8
+    internal class PA1Q8_1
     {
         static void Main(string[] args)
         {

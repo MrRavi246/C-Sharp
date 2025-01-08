@@ -43,25 +43,34 @@ namespace C_Sharp.OOPs
             Console.WriteLine();
 
         }
+        public int getAge()
+        {
+            return age;
+        }
     }
     internal class Emp
     {
         public static void Main(string[] args)
         {
             Employees emp1 = new Employees();
-
             emp1.getData();
-            emp1.showData();
 
             Employees emp2 = new Employees();
-
             emp2.getData();
-            emp2.showData();
 
             Employees emp3 = new Employees();
-
             emp3.getData();
-            emp3.showData();
+
+            if (emp1.getAge() > emp2.getAge())
+            {
+                if (emp1.getAge() > emp3.getAge())
+                {
+                    emp1.showData();
+                }
+
+
+
+            }
         }
     }
 }
