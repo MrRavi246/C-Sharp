@@ -27,7 +27,13 @@ namespace C_Sharp.OOPs
             Console.Write("Enter Semester : ");
             sem = Int32.Parse(Console.ReadLine());
         }
-
+        public Student(int rollno, string name, int sem, double cgpa)
+        {
+            this.rollno = rollno;
+            this.name = name;
+            this.sem = sem;
+            this.cgpa = cgpa;
+        }
         public void ShowData()
         {
             Console.WriteLine();
@@ -37,16 +43,26 @@ namespace C_Sharp.OOPs
             Console.WriteLine("Roll No : " + rollno);
             Console.WriteLine("CGPA : " + cgpa);
             Console.WriteLine("Semester : " + sem);
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine();
         }
     }
 
-    class ContDemo1
+    class ConstDemo1
     {
         public static void Main(string[] args)
         {
-            Student s1 = new Student();
+            Std s1 = new Std(1, "John", 8, 3);
             s1.ShowData();
+
+            Console.WriteLine("Enter Student 2 Details : ");
+            Student s2 = new Student();
+            s2.ShowData();
+
             Console.ReadKey();
+
+
         }
 
     }
