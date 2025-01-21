@@ -67,9 +67,10 @@ namespace C_Sharp.OOPs
                 {
                     emp1.showData();
                 }
-
-
-
+                else
+                {
+                    emp3.showData();
+                }
             }
         }
     }
