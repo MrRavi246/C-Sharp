@@ -11,6 +11,7 @@ namespace C_Sharp.OOPs
         int pid;
         string pname = "";
         double price;
+        public static string brand = "Dell";
 
         public Product()
         {
@@ -36,6 +37,7 @@ namespace C_Sharp.OOPs
             Console.WriteLine("Product Id : " + pid);
             Console.WriteLine("Product Name : " + pname);
             Console.WriteLine("Product Price : " + price);
+            Console.WriteLine("Product Brand :" + brand);
 
         }
 
@@ -44,7 +46,7 @@ namespace C_Sharp.OOPs
     {
         public static void Main(string[] args)
         {
-            Product[] products = new Product[5];
+            Product[] products = new Product[2];
 
             for (int i = 0; i < products.Length; i++)
             {
