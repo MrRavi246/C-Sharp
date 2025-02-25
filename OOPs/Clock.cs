@@ -38,7 +38,7 @@ namespace C_Sharp.OOPs
                     hours++;
                     if (hours >= 24)
                     {
-                        hours = 0;
+                        hours = 1;
                         min = 0;
                         sec = 0;
                     }
