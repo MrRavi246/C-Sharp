@@ -42,13 +42,19 @@ namespace C_Sharp
             Console.WriteLine("Actual Number : " + t.GetNumber());
 
             UpdateNo add = new UpdateNo(t.AddNumber);
-            add(20);
+            //add(20);
 
-            Console.WriteLine("After Addition : "+t.GetNumber());
+            //Console.WriteLine("After Addition : "+t.GetNumber());
 
             UpdateNo mul = new UpdateNo(t.MulNumber);
-            mul(5);
-            Console.WriteLine("After Multiplication : " + t.GetNumber());
+            //mul(5);
+            //Console.WriteLine("After Multiplication : " + t.GetNumber());
+
+
+            UpdateNo comb;
+            comb = add + mul;
+            comb(5);
+            Console.WriteLine("After Combination : " + t.GetNumber());
 
         }
     }
