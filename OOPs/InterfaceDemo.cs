@@ -35,7 +35,6 @@ internal class InterfaceDemo
         {
             InRectangle r = new InRectangle();
 
-
             Console.WriteLine("Area of Rectangle : " + r.getArea(10, 15));
             r.getColor("RED");
         }

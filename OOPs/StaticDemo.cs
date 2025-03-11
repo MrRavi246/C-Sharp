@@ -15,7 +15,6 @@ namespace C_Sharp.OOPs
         public static void Update()
         {
             name = "ABC";
-            
         }
         public static void Display()
         {
